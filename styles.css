@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #E5E6E4;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+    
+}
+h2,h3{
+    text-transform: uppercase;
+}
+#inicio{
+    background-image: url('/sources/img/background\ \(4\).jpg');
+    background-size:cover;
+    height: 100vh;
+}
+.itexto{
+    height: 100%;
+    padding: 25px;
+    background: rgba(86, 75, 75, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e5e6e4;
+}
+.itexto a{
+    width: 325px;
+    position: relative;
+    top:35%;
+    margin: 0px auto;
+    text-decoration: none;
+    color:#E5E6E4;
+    background-color: #1D1E2C;
+    border-radius: 16px;
+    padding: 7px 0px;
+    text-transform: uppercase;
+}
+header{
+    padding: 1em 0px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    text-transform: uppercase; 
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header a{
+    text-decoration: none;
+    color:#E5E6E4;
+    padding: 0px 1em;
+}
+#catalogo{
+    text-align: center;
+    padding: 30px 10px;
+}
+.products{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(9em, 1fr));
+    gap:10px;
+    justify-items: center;
+    align-content: center;
+}
+#catalogo h2{
+    margin-bottom:1em;
+}
+.product{
+    width: 150px;
+    height:200px;
+    margin: 1em;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+}
+#about{
+    padding: 30px 10px;
+    text-align: justify;
+}
+#about h2{
+    text-align: center;
+    margin: 1em;
+}
+footer{
+    background-color:#202124;
+    display: flex;
+    padding: 30px 10px;
+    flex-direction: column;
+    color: #E5E6E4;
+
+}
+footer h3{
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    padding-bottom:1em;
+}
+.redes img{
+    width: 35px;
+    margin-right: 10px;
+}
