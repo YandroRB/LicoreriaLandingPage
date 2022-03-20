@@ -15,7 +15,7 @@ h2,h3{
     text-transform: uppercase;
 }
 #inicio{
-    background-image: url('/sources/img/background\ \(4\).jpg');
+    background-image: url('./sources/img/background\ \(4\).jpg');
     background-size:cover;
     height: 100vh;
 }
