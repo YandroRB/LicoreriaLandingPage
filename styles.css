@@ -48,6 +48,11 @@ h1{
     border-radius: 16px;
     padding: 7px 0px;
     text-transform: uppercase;
+    transition: 1s;
+}
+.itexto a:hover{
+    color: #202124;
+    background-color: #E5E6E4;
 }
 header{
     padding: 1em 0px;
@@ -96,6 +101,16 @@ header a{
 #about{
     padding: 30px 10px;
     text-align: justify;
+    width: 100%;
+}
+#about div{
+    display: flex;
+    margin: auto;
+    width: 70%;
+}
+#about div img{
+    width: 40%;
+    padding-left: 15px;
 }
 #about h2{
     text-align: center;
@@ -121,4 +136,9 @@ footer h3{
 .redes img{
     width: 35px;
     margin-right: 10px;
+}
+@media (max-width:425px){
+    #about div img{
+        display: none;
+    }
 }
