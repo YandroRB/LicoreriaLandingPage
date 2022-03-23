@@ -109,7 +109,7 @@ header a{
     width: 70%;
 }
 #about div img{
-    width: 40%;
+    width: 50%;
     padding-left: 15px;
 }
 #about h2{
@@ -118,16 +118,50 @@ header a{
 }
 footer{
     background-color:#202124;
-    display: flex;
-    padding: 30px 10px;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
     color: #E5E6E4;
-
 }
 footer h3{
     text-align: center;
 }
-
+.siguenos{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.comuniquese{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#sugerencias{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    
+}
+#enviar {
+    width: 65%;
+    margin: auto;
+    
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .5rem;
+    font-size:large;
+}
+textarea{
+    resize: none;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 15px;
+}
+#titulo,#mail{
+    padding: 5px 10px;
+}
+#sub{
+    padding: 15px 30px;
+}
 .redes{
     display: flex;
     align-items: center;
@@ -140,5 +174,12 @@ footer h3{
 @media (max-width:425px){
     #about div img{
         display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #enviar{
+        width: 95%;
     }
 }
